@@ -1,6 +1,6 @@
-Репозиторий с практичками и билетами:
+Репозиторий с практичками и билетами:<br>
 https://github.com/mireashik/II_2sem/tree/main/ipynb
-
-Другие линки:
+<hr>
+Другие линки:<br>
 https://github.com/VadimKarmazin/Jupyter-Notebook
 
