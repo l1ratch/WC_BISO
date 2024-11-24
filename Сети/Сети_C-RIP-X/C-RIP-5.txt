@@ -1,0 +1,29 @@
+hostname MakarevichS-C-RIP-5
+router rip
+version 2
+network 213.184.12.0
+network 80.196.81.0
+network 100.148.86.0
+network 93.138.240.0
+network 93.138.249.0
+
+int e0/0
+description "From MakarevichS-C-RIP-4"
+ip address 213.184.12.2 255.255.255.252
+no shutdown
+int e0/1
+description "To MakarevichS-C-RIP-7"
+ip address 80.196.81.1 255.255.255.252
+no shutdown
+int e0/2
+description "To MakarevichS-C-RIP-6"
+ip address 100.148.86.1 255.255.255.252
+no shutdown
+int e0/3
+description "To MakarevichS-M-RIP-2"
+ip address 93.138.240.1 255.255.255.252
+no shutdown
+int e1/0
+description "From MakarevichS-C-RIP-2"
+ip address 93.138.249.2 255.255.255.252
+no shutdown
