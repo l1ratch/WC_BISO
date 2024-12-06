@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробное объяснение логики выполнения заданий</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e2f;
+            color: #dcdcdc;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4db8ff;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #f1c40f;
+            background-color: #33354d;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 1.7em;
+        }
+
+        h3 {
+            color: #f39c12;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .task {
+            background-color: #2c2e3f;
+            border-left: 5px solid #4db8ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .task code {
+            color: #f39c12;
+            font-size: 1.1em;
+        }
+
+        .important {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .answer {
+            background-color: #34495e;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-style: italic;
+            color: #ecf0f1;
+        }
+
+        .highlight {
+            background-color: #e67e22;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            background-color: #2c3e50;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        hr {
+            border: 1px solid #34495e;
+            margin: 30px 0;
+        }
+
+        .code-block {
+            background-color: #1c1c28;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Подробное объяснение логики выполнения заданий</h1>
+
+    <hr>
+
+    <h2>Задание 1: Создание локальной временной таблицы</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>1. Временная таблица создаётся с помощью <code>CREATE TEMP TABLE</code>, она существует только в рамках текущей сессии.</p>
+        <p>2. Чётные записи выбираются с помощью фильтрации: <code>WHERE order_id % 2 = 0</code>. Это проверяет остаток от деления <code>order_id</code> на 2, равный 0.</p>
+    </div>
+
+    <p><strong>Объяснение:</strong></p>
+    <p>- Временные таблицы полезны для выполнения промежуточных вычислений, чтобы не изменять оригинальные данные.</p>
+    <p>- Временные таблицы исчезают после завершения сессии, что обеспечивает безопасность данных.</p>
+
+    <p class="important">Типичные вопросы:</p>
+    <div class="answer">
+        <p class="question">Почему не выбираются нечётные записи?</p>
+        <p>- Это требование задания. Логика фильтрации может быть изменена при необходимости.</p>
+
+        <p class="question">Можно ли добавить индекс в временную таблицу?</p>
+        <p>- Да, индексы можно добавлять, но они тоже будут временными.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 2: Добавление записи в временную таблицу</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>- Используется команда <code>INSERT INTO</code>, которая добавляет строку в таблицу. Поля и их значения перечисляются в том же порядке, что и в структуре таблицы.</p>
+    </div>
+
+    <p><strong>Объяснение:</strong></p>
+    <p>- Временные таблицы не требуют ссылочной целостности или внешних ключей, что делает добавление записей быстрее.</p>
+
+    <p class="important">Типичные вопросы:</p>
+    <div class="answer">
+        <p class="question">Можно ли использовать <code>DEFAULT</code> для некоторых столбцов?</p>
+        <p>- Да, если столбец имеет значение по умолчанию в оригинальной таблице.</p>
+
+        <p class="question">Можно ли добавить строку, нарушающую уникальность?</p>
+        <p>- Да, если временная таблица не имеет ограничений на уникальность.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 3: Ошибка доступа из другой сессии</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>- Ошибка возникает, потому что временные таблицы (<code>TEMP</code>) создаются только для текущей сессии и недоступны другим.</p>
+    </div>
+
+    <p><strong>Решение:</strong></p>
+    <p>- Чтобы таблица была доступна в других сессиях, используем <code>UNLOGGED TABLE</code>. Она сохраняется в базе данных, но не логируется, что ускоряет операции.</p>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">Почему временная таблица недоступна в других сессиях?</p>
+        <p>- Это ограничение PostgreSQL для изоляции данных временной таблицы.</p>
+
+        <p class="question">Почему используется <code>UNLOGGED</code>, а не обычная таблица?</p>
+        <p>- <code>UNLOGGED</code> таблицы быстрее, так как данные не записываются в журнал транзакций.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 4: Копирование таблицы и добавление столбца</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>1. Таблица копируется с использованием структуры оригинальной таблицы.</p>
+        <p>2. Добавляется столбец <code>log_date</code>, который будет использоваться для секционирования.</p>
+    </div>
+
+    <p><strong>Объяснение:</strong></p>
+    <p>- Секционирование позволяет PostgreSQL разделять данные на логические части, что ускоряет запросы и упрощает администрирование.</p>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">Почему <code>log_date</code> обязательно <code>NOT NULL</code>?</p>
+        <p>- Секционирование требует, чтобы столбец имел значения, иначе невозможно определить, в какую секцию вставить запись.</p>
+
+        <p class="question">Можно ли секционировать по нескольким столбцам?</p>
+        <p>- Да, но это усложнит структуру и выборку данных.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 5: Создание секции для диапазона дат</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>- Создаётся секция для диапазона дат с помощью <code>PARTITION OF</code>. Она хранит данные, относящиеся только к заданному диапазону.</p>
+    </div>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">Что произойдёт, если вставить запись за пределами диапазона?</p>
+        <p>- PostgreSQL выдаст ошибку, так как запись не соответствует ни одной секции.</p>
+
+        <p class="question">Можно ли автоматически создавать секции?</p>
+        <p>- Нет, секции нужно создавать вручную, но можно написать триггер для автоматизации.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 6: Оконная функция row_number()</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>1. Оконные функции вычисляются для каждой строки результата, без группировки.</p>
+        <p>2. <code>ROW_NUMBER()</code> присваивает уникальный номер каждой строке в порядке сортировки.</p>
+    </div>
+
+    <p><strong>Объяснение:</strong></p>
+    <p>- Оконные функции позволяют добавлять метаинформацию к результатам запроса (например, нумерацию строк).</p>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">Чем <code>ROW_NUMBER</code> отличается от <code>RANK</code>?</p>
+        <p>- <code>ROW_NUMBER</code> всегда присваивает уникальные номера строкам, а <code>RANK</code> может дублировать номера при одинаковых значениях.</p>
+
+        <p class="question">Можно ли использовать оконную функцию без <code>ORDER BY</code>?</p>
+        <p>- Нет, она требует порядка.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 7: Использование CTE</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>- CTE (<code>WITH</code>) создаёт временный результат, который используется в основном запросе.</p>
+    </div>
+
+    <p><strong>Объяснение:</strong></p>
+    <p>- Упрощает сложные запросы, делая их более читаемыми.</p>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">CTE быстрее подзапросов?</p>
+        <p>- Нет, CTE обрабатываются как подзапросы, но их легче читать и отлаживать.</p>
+
+        <p class="question">Можно ли использовать CTE для изменения данных?</p>
+        <p>- Да, с CTE можно выполнять <code>INSERT</code>, <code>UPDATE</code> или <code>DELETE</code>.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 8: Временная таблица с столбцом IDENTITY</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>- Столбец <code>IDENTITY</code> автоматически генерирует уникальные значения для каждой строки, начиная с 1.</p>
+    </div>
+
+    <p><strong>Объяснение:</strong></p>
+    <p>- Удобно для создания временных идентификаторов без ручного управления значениями.</p>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">Как управлять начальным значением IDENTITY?</p>
+        <p>- Используйте <code>START WITH</code> при создании столбца.</p>
+
+        <p class="question">Можно ли изменять значения IDENTITY?</p>
+        <p>- Нет, значения генерируются автоматически.</p>
+    </div>
+
+    <hr>
+
+    <h2>Задание 9: Удаление записи и проверка IDENTITY</h2>
+    <div class="task">
+        <p><strong>Логика команды:</strong></p>
+        <p>1. Запись с <code>idd = 1</code> удаляется.</p>
+        <p>2. PostgreSQL не позволяет вставить запись с <code>idd = 1</code>, так как IDENTITY генерирует последовательность автоматически.</p>
+    </div>
+
+    <p class="important">Ответы на вопросы:</p>
+    <div class="answer">
+        <p class="question">Можно ли сбросить последовательность IDENTITY?</p>
+        <p>- Да, командой <code>ALTER SEQUENCE ... RESTART</code>.</p>
+
+        <p class="question">Почему нельзя явно задать IDENTITY?</p>
+        <p>- Это нарушает целостность данных, генерируемых системой.</p>
+    </div>
+
+    <hr>
+
+    <h3>Возможные вопросы:</h3>
+    <ul>
+        <li><p>Как ускорить выборку из секционированной таблицы? - Использовать индекс в секции и явно указывать диапазон в запросах.</p></li>
+        <li><p>Что делать, если нужно удалить секцию? - Удалить секцию можно командой <code>DROP TABLE</code>, но это не повлияет на другие секции.</p></li>
+        <li><p>Почему <code>TEMP</code> таблицы исчезают при завершении сессии? - Это стандартное поведение для изоляции данных временных операций.</p></li>
+    </ul>
+
+</body>
+</html>
