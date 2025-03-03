@@ -1,0 +1,16 @@
+Исследовать инструменты OSINT для потенциального применения
+https://github.com/duk3r4/KD6-3.7
+
+https://github.com/soxoj/maigret
+
+https://github.com/megadose/holehe
+
+https://github.com/sharsil/mailcat
+
+https://seintpl.github.io/NAMINT/
+
+https://github.com/martinvigo/email2phonenumber
+
+https://github.com/shllwrld/ok_checker
+
+РАБОТА: https://online-edu.mirea.ru/mod/assign/view.php?id=529565
