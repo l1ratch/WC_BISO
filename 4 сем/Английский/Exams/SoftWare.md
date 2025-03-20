@@ -158,7 +158,7 @@ Used by programmers to write, test, and deploy software.
 ## **Conclusion**  
 Software is an essential part of any computer system. **System software** manages resources, **application software** helps users complete tasks, and **development software** allows programmers to create new applications. Security, updates, and licensing are also critical for proper functionality and data protection.  
 <br>
-<hr>
+<br>
 <br>
 
 # **Подробное руководство по программному обеспечению (Software)**  
