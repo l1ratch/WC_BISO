@@ -165,9 +165,9 @@ Computers generate heat, so cooling is essential.
 | **Input Devices** | User interaction | Keyboard, Mouse |  
 | **Output Devices** | Displays results | Monitor, Printer |  
 | **Cooling** | Prevents overheating | Air cooling, Liquid cooling |  
-
-
-
+<br>
+<hr>
+<br>
 # **Подробное руководство по аппаратному обеспечению (Hardware)**  
 
 Аппаратное обеспечение (hardware) – это физические компоненты компьютерной системы. Они отвечают за обработку данных, хранение информации и взаимодействие с пользователем. Ниже представлено детальное описание основных типов аппаратного обеспечения, их компонентов и особенностей.  
