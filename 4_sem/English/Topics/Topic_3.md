@@ -1,4 +1,4 @@
-**Topic: How Computers and Programming Languages Work**
+## Topic: How Computers and Programming Languages Work
 
 Computers process information using binary code, which consists of 0s and 1s. This is called machine language, and it’s the only language computers understand directly. However, writing programs in machine language is difficult, so programmers use high-level languages like Python, Java, and C++. These languages are closer to human language and make programming easier.
 
@@ -9,7 +9,7 @@ Programming languages have evolved over time. For example, Java was created to b
 In short, computers rely on binary code, but programmers use high-level languages to write software efficiently. These languages are then translated into machine code, allowing computers to execute complex tasks.
 
 
-**Тема: Как работают компьютеры и языки программирования**  
+## Тема: Как работают компьютеры и языки программирования
 
 Компьютеры обрабатывают информацию с помощью двоичного кода, состоящего из 0 и 1. Это называется машинным языком, и это единственный язык, который компьютеры понимают напрямую. Однако писать программы на машинном языке сложно, поэтому программисты используют языки высокого уровня, такие как Python, Java и C++. Эти языки ближе к человеческому языку и упрощают написание программ.  
 
