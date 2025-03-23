@@ -1,20 +1,20 @@
-## Topic: How Computers and Programming Languages Work
+## Topic: Computers and Programming Languages
 
-Computers process information using binary code, which consists of 0s and 1s. This is called machine language, and it’s the only language computers understand directly. However, writing programs in machine language is difficult, so programmers use high-level languages like Python, Java, and C++. These languages are closer to human language and make programming easier.
+Computers only understand binary code (0s and 1s), but writing programs in it is hard. That’s why programmers use high-level languages like Python, Java, and C++. These languages are closer to human language and make programming easier.  
 
-High-level languages need to be translated into machine code for the computer to execute them. This is done by a compiler (which translates the entire program at once) or an interpreter (which translates line by line). Low-level languages, like assembly language, are closer to machine code but are harder to use and specific to certain hardware.
+Programs in high-level languages are translated into machine code using a compiler (translates the whole program at once) or an interpreter (translates line by line). Low-level languages, like assembly, are closer to machine code but harder to use.  
 
-Programming languages have evolved over time. For example, Java was created to be platform-independent, meaning programs written in Java can run on any device. Python, known for its simplicity, is widely used in web development, data analysis, and AI. Object-oriented programming (OOP) is a popular approach that bundles data and instructions into "objects," making programs easier to reuse and maintain.
+Java was made to work on any device, while Python is simple and widely used in web development and data analysis. Object-oriented programming (OOP) bundles data and instructions into "objects," making programs easier to build and maintain.  
 
-In short, computers rely on binary code, but programmers use high-level languages to write software efficiently. These languages are then translated into machine code, allowing computers to execute complex tasks.
+In short, computers run on binary code, but programmers write programs in easier languages, which are then translated into machine code.
 
 
-## Тема: Как работают компьютеры и языки программирования
+## Тема: Компьютеры и языки программирования
 
-Компьютеры обрабатывают информацию с помощью двоичного кода, состоящего из 0 и 1. Это называется машинным языком, и это единственный язык, который компьютеры понимают напрямую. Однако писать программы на машинном языке сложно, поэтому программисты используют языки высокого уровня, такие как Python, Java и C++. Эти языки ближе к человеческому языку и упрощают написание программ.  
+Компьютеры понимают только двоичный код (0 и 1), но писать программы на нём сложно. Поэтому программисты используют языки высокого уровня, такие как Python, Java и C++. Эти языки ближе к человеческому языку и упрощают создание программ.  
 
-Языки высокого уровня нужно перевести в машинный код, чтобы компьютер мог их выполнить. Это делается с помощью компилятора (который переводит всю программу сразу) или интерпретатора (который переводит построчно). Низкоуровневые языки, например ассемблер, ближе к машинному коду, но их сложнее использовать, и они зависят от конкретного оборудования.  
+Программы на языках высокого уровня переводятся в машинный код с помощью компилятора (переводит всю программу сразу) или интерпретатора (переводит построчно). Низкоуровневые языки, например ассемблер, ближе к машинному коду, но сложнее в использовании.  
 
-Языки программирования развивались со временем. Например, Java был создан для кроссплатформенности, то есть программы на Java могут работать на любом устройстве. Python, известный своей простотой, широко используется в веб-разработке, анализе данных и искусственном интеллекте. Объектно-ориентированное программирование (ООП) — это популярный подход, который объединяет данные и инструкции в "объекты", делая программы более удобными для повторного использования и поддержки.  
+Java создан для кроссплатформенности, Python — для простоты и широко используется в веб-разработке и анализе данных. Объектно-ориентированное программирование (ООП) объединяет данные и инструкции в "объекты", что упрощает разработку и поддержку программ.  
 
-Короче говоря, компьютеры работают на двоичном коде, но программисты используют языки высокого уровня для эффективного написания программ. Эти языки затем переводятся в машинный код, что позволяет компьютерам выполнять сложные задачи.
+Итак, компьютеры работают на двоичном коде, а программисты пишут программы на удобных языках, которые затем переводятся в машинный код.
