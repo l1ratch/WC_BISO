@@ -1,4 +1,4 @@
-# Terminology Summary (Topics 1-4)
+# [EN] Terminology Summary (Topics 1-4)
 
 ## Key Terms and Definitions
 
@@ -65,3 +65,5 @@
 - Virtual circuit switching: Packet switching with a pre-established path.
 
 This summary covers the essential terminology from the provided document, organized by category for better understanding.
+
+# [RU] Краткое изложение терминологии (темы 1-4)
