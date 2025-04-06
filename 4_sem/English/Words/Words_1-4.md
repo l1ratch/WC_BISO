@@ -68,6 +68,12 @@
 
 ---
 
+## [RU] 🔠 Acronyms & Abbreviations
+
+| Abbreviation | Stands For                                 |
+
+---
+
 ## 🧾 Definitions
 
 - **Assembler**: A program that translates assembly language into machine code.
@@ -91,5 +97,11 @@
 - **Polymorphism**: An object-oriented programming concept where one function or object can take on many forms.
 - **Virtual circuit switching**: A method of communication where a virtual path is established between sender and receiver before data transfer.
 - **Web browser**: Software that allows users to access and interact with websites on the Internet.
+
+---
+
+## [RU] 🧾 Definitions
+
+- **Assembler**: A program that translates assembly language into machine code.
 
 ---
