@@ -326,56 +326,99 @@ F. **Viruses need a host file, worms don't**
 
 ---
 
-### **Task 11. Speaking – Discuss with a partner**
+**Задание 11.** Просмотрите видео о DDoS-атаке по ссылке [https://www.youtube.com/watch?v=ilhGh9CEIwM] и ответьте на вопросы:
 
-(Пример ответа, если нужно будет говорить устно или писать кратко):
+1. **Что означает аббревиатура DDoS?**
 
-**What would you do if you received an email attachment from an unknown sender?**  
-> I wouldn’t open it. First, I’d check the sender’s email address and see if it looks suspicious. Then I’d scan the attachment with antivirus software. If I wasn’t expecting anything, I’d probably just delete the email.
+   DDoS расшифровывается как "Distributed Denial of Service", что переводится как "распределённая атака отказа в обслуживании". citeturn0search8
 
-**Have you ever had a virus on your computer? What happened?**  
-> Yes, once I downloaded a program from a shady website, and it infected my system. My computer got really slow and weird ads kept popping up. I had to reinstall the OS and lost a lot of files.
+2. **Как DDoS-атака нарушает работу сети или сервера?**
+
+   DDoS-атака направлена на перегрузку сервера или сети множеством запросов с различных устройств, что делает ресурсы недоступными для легитимных пользователей. citeturn0search8
+
+3. **В чём разница между DoS-атакой и DDoS-атакой?**
+
+   DoS-атака осуществляется с одного устройства, тогда как DDoS-атака исходит из множества устройств, что делает её более сложной для предотвращения. citeturn0search2
+
+4. **Почему DoS-атаку легче отразить, чем DDoS-атаку?**
+
+   Поскольку DoS-атака исходит из одного источника, её легче обнаружить и заблокировать. DDoS-атака, напротив, использует множество источников, что усложняет её нейтрализацию. citeturn0search2
+
+5. **Как технически выполняется DDoS-атака?**
+
+   Злоумышленник создаёт сеть заражённых устройств (ботнет), которые одновременно отправляют большое количество запросов к целевому серверу, вызывая его перегрузку и отказ в обслуживании. citeturn0search8
+
+6. **Что такое ботнет?**
+
+   Ботнет — это сеть компьютеров, заражённых вредоносным ПО и находящихся под контролем злоумышленника, используемая для проведения атак, таких как DDoS. citeturn0search3
+
+7. **Каковы причины проведения DDoS-атак?**
+
+   Мотивы могут включать хулиганство, месть, вымогательство, хактивизм и политические или идеологические причины. citeturn0search4
+
+**Task 11** answered **in English**:
+
+1. **What does DDoS stand for?**  
+   DDoS stands for **Distributed Denial of Service**.
+
+2. **How does a DDoS attack disrupt the work of a network or server?**  
+   A DDoS attack floods a network or server with an overwhelming amount of traffic, making it unable to respond to legitimate requests and causing it to crash or slow down significantly.
+
+3. **What's the difference between a DoS attack and a DDoS attack?**  
+   A DoS (Denial of Service) attack comes from a single source, while a DDoS (Distributed Denial of Service) attack comes from **multiple sources** at the same time, often using a network of infected devices.
+
+4. **Why is it easier to handle a DoS attack than a DDoS attack?**  
+   It is easier to block a single-source DoS attack. DDoS attacks are harder to stop because they come from **many different locations** at once, making it more difficult to identify and filter all malicious traffic.
+
+5. **How is a DDoS attack technically performed?**  
+   A DDoS attack is usually carried out using a **botnet**, a network of infected computers (bots) controlled remotely by an attacker. These bots send large amounts of traffic to the target to overwhelm it.
+
+6. **What is a botnet?**  
+   A botnet is a group of compromised computers or devices connected to the internet that are controlled by a hacker and used to perform malicious activities, such as launching DDoS attacks.
+
+7. **What are the reasons for a DDoS attack?**  
+   Common reasons include **revenge, activism, competition, extortion, or just to cause disruption**. Sometimes attackers also use DDoS attacks to distract from other cybercrimes happening at the same time.
 
 ---
 
-### **Task 12. Project – Research & Report**
+**Задание 12.** Заполните пропуски правильными предлогами.
 
-(Пример краткого текста для проекта, можно использовать как заготовку):
+1. A virus can stay dormant **until** a particular event activates it.
+2. A Trojan looks **like** an ordinary, useful file or program.
+3. A worm does not need to attach itself **to** another program.
+4. Spyware works **in** the background aiming to collect confidential information of the user.
+5. A hacker is someone who tries to break **into** a computer system.
+6. We aren't permitted to download files from the Internet **without** authorization.
+7. Since phishing is a serious crime, we are working **with** federal police to stop it.
+8. A lost database can result **in** receiving unwanted sales calls.
+9. In case **of** data breach, all the affected customers are informed as soon as possible.
+10. These viruses not only spread malicious code, they also replace the information contained **in** other programs.
 
-**Project: Famous Malware – WannaCry Ransomware**
+**Задание 13.** Определите тип вредоносного ПО или киберпреступления, описанного в каждом абзаце.
 
-WannaCry is a type of ransomware that spread across the world in May 2017. It affected over 200,000 computers in more than 150 countries. The malware encrypted users’ files and demanded payment in Bitcoin to unlock them. It exploited a Windows vulnerability called EternalBlue. Hospitals, banks, and government institutions were hit. The attack caused billions in damage. It was eventually stopped by a cybersecurity researcher who discovered a "kill switch" in the code. WannaCry showed how important it is to keep software up to date and have good backups.
+1. **Spyware**
+2. **Adware**
+3. **Keylogger**
+4. **Worm**
+5. **Hijacking**
+6. **DDoS attack**
+7. **Trojan horse**
+8. **Phishing**
+9. **Piggybacking**
+10. **Ransomware**
+11. **Miner**
+12. **Software piracy**
+13. **Backdoor**
+14. **Defacement**
+15. **Salami shaving**
 
----
+**Задание 14.** Переведите с русского на английский.
 
-### **Task 13. Vocabulary Revision – Synonyms**
-
-**Match the synonyms:**
-
-1. detect – **f) discover**  
-2. infect – **c) contaminate**  
-3. trigger – **e) activate**  
-4. damage – **a) harm**  
-5. carry – **d) contain**  
-6. attach – **b) connect**
-
----
-
-### **Task 14. Writing – 120–150 words**
-
-**Write a short article about protecting your computer from malware.**  
-(Вот пример — можно отредактировать под себя):
-
----
-
-**How to Protect Your Computer from Malware**
-
-In today’s digital world, protecting your computer from malware is essential. First of all, install reliable antivirus software and keep it up to date. Antivirus programs help detect and remove malicious software before it can cause harm.
-
-Secondly, avoid opening email attachments or clicking on links from unknown sources. Many viruses spread through email or infected websites. Always double-check the source before downloading anything.
-
-Also, keep your operating system and software updated. Developers regularly release security patches that fix vulnerabilities malware can exploit.
-
-Finally, back up your data regularly. If your system is infected, you won’t lose important files.
-
-By following these steps, you can reduce the risk of infection and keep your computer safe from threats.
+1. This is a program that automatically displays advertisements on the screen.
+2. This is a free program that contains a virus.
+3. There are a number of measures that block the installation of viruses, worms, spyware, and other malicious software.
+4. Users may not be aware of the presence of viruses on their computers.
+5. Piracy is a violation of copyright.
+6. Phishing is an illegal attempt to obtain passwords and credit card data.
+7. Once inside the system, the virus replaces one of the components involved in the computer's boot process.
+8. A worm can spread across the network without human intervention.
