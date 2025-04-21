@@ -131,14 +131,7 @@
    - **Network-based:** Protects an entire network (e.g., at the router level).  
 
 6. **What is the benefit of using both firewalls together?**  
-   - **Layered security:** Network firewalls block external threats, while host-based firewalls add internal protection if a device is compromised.  
-
----  
-
-### **Roleplay Suggestion (Task 6)**  
-**Employee 1:** *"I’m not sure. I can’t access the Internet for some reason, or check my email. I just don’t know what’s going on."*  
-**Employee 2:** *"That’s strange. Let me see if I can figure it out."*  
-*(Continue with the completed dialogue above, emphasizing troubleshooting steps.)*  
+   - **Layered security:** Network firewalls block external threats, while host-based firewalls add internal protection if a device is compromised.   
 
 ---  
 
