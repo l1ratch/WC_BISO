@@ -2,3 +2,4 @@
 2. Building a website without coding
 3. Effective website design
 4. Visual appearance
+5. Website loading speed
