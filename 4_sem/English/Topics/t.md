@@ -4,4 +4,4 @@
 4. Visual appearance
 5. Website loading speed
 6. SEO — Search Engine Optimization
-7. 
+7. Frontend and backend
