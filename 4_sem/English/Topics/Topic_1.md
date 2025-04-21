@@ -1,4 +1,3 @@
-Топик
 
 Wired Technologies:  
 DSL uses telephone lines for high-speed Internet, allowing simultaneous phone and Internet use. ADSL is the most common type, offering faster downloads than uploads.  
