@@ -142,3 +142,70 @@
 
 ---  
 
+### **Task 8. Read Text B and Fill in the Gaps**  
+
+**Text B. Antivirus Software**  
+*(Missing words in bold)*  
+
+Antivirus software is designed to detect, **(1) prevent** and take action to disarm or remove malicious software from your computer such as viruses, worms and Trojan horses. It may also prevent or remove **(2) unwanted** spyware and adware in addition to other types of malicious programs. The first versions of antivirus software can be traced as far back as the 1980s.  
+
+While you may think that your computer is safe as long as you don't visit **(3) suspicious** websites, hackers have much more nuanced ways of getting their viruses on your computers, which is why you need a **(4) robust** antivirus to stay one step ahead of them. Some antivirus software will ask for your permission before "cleaning" a file to remove malicious code. If you prefer a **(5) hands-off** approach, you can adjust the settings so the software automatically removes malicious files.  
+
+Every virus contains a **(6) signature**, which is like its fingerprint. It’s the distinguishing feature that sets it apart from other programs running on your computer, and it also makes the virus recognizable, and therefore a potential **(7) target** for antivirus software. Documents, programs and applications are generally scanned for viruses when they are being used. Once an executable file is downloaded, it is instantly scanned to check if it is **(8) infected** with malware.  
+
+As opposed to signature-based scanning, which matches signatures found in files with that of a database of known malware, heuristic scanning uses rules and algorithms to look for commands which may indicate malicious **(9) intent**. This causes the antivirus programming to recognize new malware without having the exact match in the database. Most antivirus programs use both signature and heuristic-based methods in combination, in order to catch any malware that may try to evade **(10) detection**.  
+
+---
+
+### **Task 9. Find English Equivalents**  
+
+| **Russian Phrase**          | **English Equivalent (from Text B)** |  
+|-----------------------------|--------------------------------------|  
+| 1) принимать меры           | take action                          |  
+| 2) нежелательные шпионские программы | unwanted spyware               |  
+| 3) подозрительные сайты     | suspicious websites                  |  
+| 4) на шаг впереди           | stay one step ahead                  |  
+| 5) подход                   | approach                             |  
+| 6) отпечаток пальцев        | fingerprint (signature)              |  
+| 7) отличительная черта      | distinguishing feature               |  
+| 8) заражённый               | infected                             |  
+
+---
+
+### **Task 10. Read Text C, Entitle the Paragraphs, and Answer Questions**  
+
+#### **Paragraph Titles:**  
+1. **c) A definition of data encryption**  
+2. **d) The primary functions of data encryption** *(Explanation of keys & types of encryption)*  
+3. **a) Data encryption solutions** *(How encryption ensures security)*  
+4. **b) Challenges to contemporary encryption** *(Brute force & cryptanalysis)*  
+
+#### **Questions & Answers:**  
+1. **What is data encryption?**  
+   - A method of encoding data so only authorized parties can understand it, converting plaintext into ciphertext.  
+
+2. **What is ciphertext?**  
+   - Encrypted, incomprehensible text produced from plaintext using an algorithm.  
+
+3. **What does ‘cryptography’ mean?**  
+   - From Arabic "secret writing," it refers to techniques for secure communication.  
+
+4. **What is a cryptographic key?**  
+   - A randomized string of bits used to encrypt/decrypt data (e.g., symmetric/asymmetric keys).  
+
+5. **What are the two main types of encryption?**  
+   - **Symmetric encryption** (single shared key) and **asymmetric encryption** (public/private key pair).  
+
+6. **What is the difference between symmetric and asymmetric encryption?**  
+   - **Symmetric:** One key for both encryption/decryption (must be kept secret).  
+   - **Asymmetric:** Public key encrypts, private key decrypts; no need to share the private key.  
+
+7. **What does encryption guarantee?**  
+   - **Confidentiality** (only authorized access), **authentication** (verified sender), **integrity** (unaltered data), and **non-repudiation** (sender cannot deny sending).  
+
+8. **What two methods of breaking a cipher are there? What is the difference?**  
+   - **Brute force:** Trying all possible keys until the correct one is found (depends on key length).  
+   - **Cryptanalysis:** Exploiting weaknesses in the cipher’s design (more efficient if flaws exist).  
+
+---  
+
