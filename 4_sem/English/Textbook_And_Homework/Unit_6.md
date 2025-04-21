@@ -248,3 +248,79 @@ As opposed to signature-based scanning, which matches signatures found in files 
 
 ---
 
+### **Task 14. Find seventeen terms related to cybercrime. The words are located horizontally (across) or vertically (down).**
+Here are 17 cybercrime-related words found in the word search (horizontally or vertically):
+1. **worm** – Row 1, Columns 5–8 (horizontal)
+2. **spyware** – Row 1, Columns 12–18 (horizontal)
+3. **phishing** – Row 7, Columns 3–10 (horizontal)
+4. **malware** – Row 4, Columns 5–11 (horizontal)
+5. **infected** – Row 9, Columns 3–10 (horizontal)
+6. **firewall** – Row 12, Columns 3–10 (horizontal)
+7. **trojan** – Column 18, Rows 6–11 (vertical)
+8. **virus** – Column 2, Rows 8–12 (vertical)
+9. **adware** – Row 4, Columns 5–10 (horizontal)
+10. **hacker** – Column 5, Rows 1–6 (vertical)
+11. **scam** – Column 17, Rows 4–7 (vertical)
+12. **spam** – Column 20, Rows 1–4 (vertical)
+13. **botnet** – Column 15, Rows 5–10 (vertical)
+14. **ransom** – Row 6, Columns 11–16 (horizontal)
+15. **keylogger** – Column 6, Rows 3–12 (vertical)
+16. **identity** – Column 13, Rows 1–8 (vertical)
+17. **cyber** – Column 1, Rows 1–5 (vertical)
+
+---
+
+### **Task 15. Email Questions & Answers**  
+
+1. **How many security features will the company have?**  
+   - **Five**: Virtual Private Network (VPN) with firewall, Web Application Firewall (WAF), Secure Socket Layer (SSL), Two-Factor Authentication (2FA), Encrypted backups.  
+
+2. **Which security feature will stop attacks on the company network?**  
+   - **Virtual Private Network (VPN) with a firewall** (protects the network perimeter).  
+
+3. **What solution will protect customer contacts and login boxes?**  
+   - **Web Application Firewall (WAF)** (blocks hacker attacks on web forms).  
+
+4. **What will protect private user information sent over the network?**  
+   - **Secure Socket Layer (SSL)** (encrypts data in transit).  
+
+5. **What will the two-factor authentication prevent?**  
+   - **Password leaks** (requires a second verification step for administrators).  
+
+6. **What will protect information?**  
+   - **Encrypted backups** (secures sensitive data even if breached).  
+
+---
+
+### **Task 16. Match Terms with Definitions**  
+
+| **Term**                     | **Definition**                                                                 |  
+|-------------------------------|-------------------------------------------------------------------------------|  
+| 1. **Firewall**               | A combination of software/hardware to filter incoming traffic.                |  
+| 2. **Signature**              | A distinguishing feature in viruses (like a fingerprint).                     |  
+| 3. **Heuristic scanning**     | Detects malware using behavioral rules (no exact signature match needed).      |  
+| 4. **Cybersecurity**          | Protects systems/networks from digital attacks.                               |  
+| 5. **Multi-factor authentication** | Requires multiple verification steps (e.g., password + SMS code).         |  
+| 6. **Encryption**             | Encodes data so only authorized parties can read it.                          |  
+| 7. **Brute force**            | Trying random keys to decrypt data.                                           |  
+| 8. **Password**               | A secret string used to verify identity.                                      |  
+| 9. **Cryptanalysis**          | Finding weaknesses in ciphers to decrypt data.                                |  
+| 10. **CAPTCHA**               | A test to distinguish humans from bots (e.g., distorted text).                |  
+
+---
+
+### **Task 17. Find English Equivalents**  
+
+| **Given Word** | **Equivalent in Text** |  
+|----------------|------------------------|  
+| 1. **secure**  | safe                   |  
+| 2. **duplicates** | copies              |  
+| 3. **chosen**  | selected               |  
+| 4. **modified** | changed/edited       |  
+| 5. **turned off** | switched off        |  
+| 6. **previously** | before             |  
+
+**Context Examples from Text:**  
+- "**Copies** all selected files" → **duplicates**.  
+- "Archive bit is **switched off**" → **turned off**.  
+- "Whether or not they have been **edited** **before**" → **modified**, **previously**.  
