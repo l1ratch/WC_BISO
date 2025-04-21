@@ -209,3 +209,42 @@ As opposed to signature-based scanning, which matches signatures found in files 
 
 ---  
 
+### **Task 11. Translate the sentences from Russian into English.**  
+
+1. Even the best and strongest companies can face cybersecurity problems.  
+2. Reliable software is one of the most effective ways to protect against cyber threats.  
+3. Today, thanks to secure servers, customers can easily shop online.  
+4. Phishing emails may contain links to websites infected with malware.  
+5. Make sure your most important accounts are protected by strong passwords that you don’t use anywhere else.  
+6. Passwords consisting only of numbers are worse than those containing a mix of letters, numbers, and special characters.  
+7. Secure websites will notify you that data transmission is encrypted, and your browser will display a padlock symbol to confirm this.  
+
+---
+
+### **Task 12. Fill in the gaps with the appropriate prepositions.**  
+
+1. This year, the number of data breaches is bigger **than** it was last year.  
+2. Strong passwords are usually case-sensitive and contain a variety **of** numbers and special symbols.  
+3. Cloud backups are now a reliable solution to cope **with** data loss, accidental deletion, or cyberattacks.  
+4. Updates usually contain changes capable **of** making your device more secure.  
+5. The problems of security and privacy that are related **to** online trade represent a significant barrier to e-commerce.  
+6. Encryption is the method by which information is converted **into** a secret code that hides the information's true meaning.  
+7. A firewall protects the system **from** public access.  
+8. Firewall filters can be based **on** IP addresses, domain names, port numbers, etc.  
+9. **Before** entering your confidential data, you should make sure that you are on the official website **by** checking the URL.  
+10. Your device might get infected **with** malware through illegal downloads of popular movies or games.  
+11. The main benefit **of** multi-factor authentication is the enhancement of your online security.  
+
+---
+
+### **Task 13. Complete the sentences with your own ideas.**  
+
+1. **Cyber criminals can steal confidential information if** you use weak passwords or fall for phishing scams.  
+2. **If you make purchases on an unsecured website,** your payment details could be stolen by hackers.  
+3. **Any person with a computer will become a software pirate if** they download cracked programs instead of buying licensed versions.  
+4. **If I had known about this type of cyber fraud,** I wouldn’t have clicked on that suspicious link.  
+5. **Your computer would not have been hacked if** you had installed a firewall and kept your antivirus updated.  
+6. **If you don’t have a good antivirus program,** malware could infect your system without your knowledge.  
+
+---
+
