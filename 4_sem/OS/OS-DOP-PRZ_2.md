@@ -252,6 +252,7 @@
    ```  
    *Скриншот: вывод каждой команды.*
 
+Другие варианты здесь: https://github.com/l1ratch/WC_BISO/blob/main/4_sem/OS/OS-DOP-PRZ_2-All-Var.md
 ---
 
 **Примечание:**  
