@@ -1,5 +1,4 @@
-# Закрепы по репозиторию
-### [4 сем](https://github.com/l1ratch/WC_BISO/tree/main/4_sem)<br>
+## [4 сем](https://github.com/l1ratch/WC_BISO/tree/main/4_sem)<br>
 - [Английский](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/English)<br>
 - [Операционные Системы](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/OS)<br>
 - [БПИТиС](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/БПИТиС)<br>
