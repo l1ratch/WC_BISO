@@ -1,7 +1,10 @@
 # Закрепы по репозиторию
-### [Английский | 4 сем](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/English)
-[HardWare](https://github.com/l1ratch/WC_BISO/blob/main/4_sem/English/Exams/By_Tems/1.HardWare.md)
-[HardDrive](https://github.com/l1ratch/WC_BISO/blob/main/4_sem/English/Exams/By_Tems/2.HardDrive.md)
-[SoftWare](https://github.com/l1ratch/WC_BISO/blob/main/4_sem/English/Exams/By_Tems/3.SoftWare.md)
-[Networks](https://github.com/l1ratch/WC_BISO/blob/main/4_sem/English/Exams/By_Tems/4.Networks.md)
+### [4 сем](https://github.com/l1ratch/WC_BISO/tree/main/4_sem)
+[Английский](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/English)
+[Операционные Системы](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/OS)
+[БПИТиС](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/БПИТиС)
+[ИИ и ФД](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/ИИ_и_Большие_Данные)
+[МиОИАД](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/МиОИАД)
+[Философия](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/Философия)
+[МиОИАД](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/МиОИАД)
 <hr>
