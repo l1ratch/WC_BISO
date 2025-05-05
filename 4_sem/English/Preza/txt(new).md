@@ -46,14 +46,9 @@ Theft of corporate databases (logins, passwords, payment details).
 - **Antivirus and firewalls** (Kaspersky, Bitdefender).  
 - **Software updates** — patching vulnerabilities.  
 - **Data encryption** (VPN, SSL/TLS).  
-- **Intrusion detection/prevention systems (IDS/IPS).**  
+- **Intrusion detection/prevention systems (IDS/IPS).** 
 
-### **2.2. Organizational Measures**  
-- **Employee training** — recognizing phishing attempts.  
-- **Backup policies** (3-2-1 rule).  
-- **Access control** (principle of least privilege).  
-
-### **2.3. DDoS Protection**  
+### **2.2. DDoS Protection**  
 - Using CDN (Cloudflare).  
 - Traffic filtering.  
 
