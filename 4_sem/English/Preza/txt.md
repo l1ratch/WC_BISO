@@ -1,117 +1,117 @@
-### Расширенный доклад к презентации  
-**Тема:** "Malware and Cybercrime" и "Data Security"  
+### Extended Presentation Notes  
+**Topic:** "Malware and Cybercrime" and "Data Security"  
 
----
+---  
 
-#### Слайд 1: Введение  
-**Цель презентации:**  
-В современном цифровом мире киберугрозы становятся всё более изощрёнными, а защита данных — критически важной. Эта презентация поможет:  
-1. **Изучить виды вредоносного ПО** (malware) и методы киберпреступлений (cybercrime).  
-2. **Разобрать современные технологии защиты данных**, включая шифрование, аутентификацию и резервное копирование.  
-3. **Сформировать практические навыки** для обеспечения личной и корпоративной кибербезопасности.  
+#### Slide 1: Introduction  
+**Presentation Objectives:**  
+In today’s digital world, cyber threats are becoming increasingly sophisticated, and data protection is more critical than ever. This presentation aims to:  
+1. **Explore types of malware** and cybercrime techniques.  
+2. **Analyze modern data security technologies**, including encryption, authentication, and backups.  
+3. **Develop practical skills** for personal and corporate cybersecurity.  
 
-**Актуальность темы:**  
-По данным исследований, в 2023 году ущерб от киберпреступлений превысил $8 трлн. Ежедневно фиксируется более 300 тыс. новых вредоносных программ.  
+**Relevance of the Topic:**  
+According to research, cybercrime caused over $8 trillion in damages in 2023. Over 300,000 new malware samples are detected daily.  
 
----
+---  
 
-#### Слайд 2: Unit 5 – Malware and Cybercrime  
-**1. Основные понятия**  
-- **Malware** (вредоносное ПО) — программы, созданные для нанесения ущерба:  
-  - *Пример:* Вирус WannaCry (2017) заразил 200 тыс. компьютеров в 150 странах.  
-- **Cybercrime** — преступления в цифровой среде:  
-  - *Пример:* Фишинговые атаки составляют 80% всех инцидентов безопасности.  
+#### Slide 2: Unit 5 – Malware and Cybercrime  
+**1. Key Concepts**  
+- **Malware** (malicious software) — programs designed to cause harm:  
+  - *Example:* The WannaCry virus (2017) infected 200,000 computers across 150 countries.  
+- **Cybercrime** — criminal activities in the digital space:  
+  - *Example:* Phishing attacks account for 80% of all security incidents.  
 
-**2. Виды вредоносного ПО**  
-| Тип          | Характеристики                                  | Пример               |  
+**2. Types of Malware**  
+| Type          | Characteristics                                  | Example               |  
 |--------------|------------------------------------------------|----------------------|  
-| **Вирусы**   | Заражают файлы, активируются пользователем     | Melissa (1999)       |  
-| **Черви**    | Распространяются автономно через сети          | ILOVEYOU (2000)      |  
-| **Трояны**   | Маскируются под легальные программы            | Emotet               |  
-| **Ransomware**| Шифруют данные и требуют выкуп                 | NotPetya (2017)      |  
-| **Spyware**  | Крадут данные (пароли, банковские реквизиты)   | Pegasus              |  
+| **Viruses**   | Infect files, require user activation         | Melissa (1999)       |  
+| **Worms**    | Self-replicate via networks                   | ILOVEYOU (2000)      |  
+| **Trojans**   | Disguised as legitimate software              | Emotet               |  
+| **Ransomware**| Encrypts data and demands ransom              | NotPetya (2017)      |  
+| **Spyware**  | Steals data (passwords, bank details)        | Pegasus              |  
 
-**3. Киберпреступления**  
-- **Фишинг:** Поддельные письма от "банков" с ссылками на фейковые сайты.  
-  - *Статистика:* 65% атак используют социальную инженерию.  
-- **DDoS-атаки:** Ботнеты (например, Mirai) атакуют серверы, вызывая отказы.  
-- **Салами-атаки:** Кража микросумм со счетов (например, округление дробных копеек).  
+**3. Cybercrimes**  
+- **Phishing:** Fake emails from "banks" with links to fraudulent websites.  
+  - *Statistic:* 65% of attacks use social engineering.  
+- **DDoS Attacks:** Botnets (e.g., Mirai) overwhelm servers, causing outages.  
+- **Salami Attacks:** Theft of micro-amounts (e.g., rounding fractional cents).  
 
----
+---  
 
-#### Слайд 3: Unit 6 – Data Security  
-**1. Методы защиты данных**  
-- **Антивирусное ПО:**  
-  - *Принцип работы:* Сигнатурный анализ + эвристическое сканирование.  
-  - *Лучшие решения:* Kaspersky, Norton, Bitdefender.  
-- **Firewall:**  
-  - *Функции:* Блокировка подозрительных IP-адресов и портов.  
-  - *Пример:* Windows Defender Firewall.  
-- **Шифрование:**  
-  - **AES-256** (стандарт для госструктур) vs. **RSA** (для цифровых подписей).  
-- **Резервное копирование:**  
-  - Правило 3-2-1: 3 копии, 2 типа носителей, 1 вне офиса.  
+#### Slide 3: Unit 6 – Data Security  
+**1. Data Protection Methods**  
+- **Antivirus Software:**  
+  - *How it works:* Signature analysis + heuristic scanning.  
+  - *Top solutions:* Kaspersky, Norton, Bitdefender.  
+- **Firewalls:**  
+  - *Functions:* Blocks suspicious IPs and ports.  
+  - *Example:* Windows Defender Firewall.  
+- **Encryption:**  
+  - **AES-256** (government standard) vs. **RSA** (for digital signatures).  
+- **Backups:**  
+  - 3-2-1 Rule: 3 copies, 2 storage types, 1 offsite.  
 
-**2. Технологии аутентификации**  
+**2. Authentication Technologies**  
 - **MFA (Multi-Factor Authentication):**  
-  - Комбинация пароля + SMS + биометрия.  
-  - *Пример:* Google Authenticator.  
-- **Биометрия:**  
-  - Точность Face ID (Apple) — 1 ошибка на 1 млн попыток.  
+  - Combines password + SMS + biometrics.  
+  - *Example:* Google Authenticator.  
+- **Biometrics:**  
+  - Face ID (Apple) accuracy: 1 error per 1 million attempts.  
 
-**3. Угрозы и защита**  
-| Угроза               | Защита                          |  
+**3. Threats and Countermeasures**  
+| Threat               | Protection                          |  
 |----------------------|---------------------------------|  
-| Brute Force          | Пароли 12+ символов + блокировка после 5 попыток |  
-| CAPTCHA              | reCAPTCHA v3 (анализ поведения) |  
-| Уязвимости ПО        | Автоматические обновления (например, Windows Update) |  
+| Brute Force          | 12+ character passwords + lockout after 5 attempts |  
+| CAPTCHA              | reCAPTCHA v3 (behavioral analysis) |  
+| Software Vulnerabilities | Automatic updates (e.g., Windows Update) |  
 
----
+---  
 
-#### Слайд 4: Сравнение Unit 5 и Unit 6  
-| Критерий             | Unit 5 (Malware and Cybercrime)       | Unit 6 (Data Security)           |  
+#### Slide 4: Unit 5 vs. Unit 6 Comparison  
+| Criterion             | Unit 5 (Malware and Cybercrime)       | Unit 6 (Data Security)           |  
 |----------------------|---------------------------------------|----------------------------------|  
-| **Фокус**            | Изучение угроз                        | Инструменты противодействия      |  
-| **Ключевые примеры** | Вирусы, фишинг, DDoS                  | Firewall, AES, MFA               |  
-| **Цель**            | Осознание рисков                      | Формирование навыков защиты      |  
+| **Focus**            | Threat analysis                       | Defense tools                    |  
+| **Key Examples**     | Viruses, phishing, DDoS               | Firewalls, AES, MFA              |  
+| **Goal**            | Risk awareness                        | Developing protection skills     |  
 
-**Вывод:** Оба раздела взаимосвязаны — понимание угроз (Unit 5) мотивирует внедрять меры защиты (Unit 6).  
+**Conclusion:** The two units are interconnected—understanding threats (Unit 5) motivates the adoption of safeguards (Unit 6).  
 
----
+---  
 
-#### Слайд 5: Практические рекомендации  
-**Для пользователей:**  
-1. **Профилактика malware:**  
-   - Не открывайте вложения от неизвестных отправителей.  
-   - Проверяйте домены сайтов (например, `bank.ru` vs. `b4nk.ru`).  
-2. **Защита данных:**  
-   - Используйте менеджеры паролей (LastPass, 1Password).  
-   - Включайте резервное копирование в облако (Google Drive, iCloud).  
+#### Slide 5: Practical Recommendations  
+**For Users:**  
+1. **Malware Prevention:**  
+   - Avoid opening attachments from unknown senders.  
+   - Verify website domains (e.g., `bank.ru` vs. `b4nk.ru`).  
+2. **Data Protection:**  
+   - Use password managers (LastPass, 1Password).  
+   - Enable cloud backups (Google Drive, iCloud).  
 
-**Для организаций:**  
-- Внедряйте **SIEM-системы** (например, Splunk) для мониторинга угроз.  
-- Проводите **тренинги** по кибергигиене для сотрудников.  
+**For Organizations:**  
+- Deploy **SIEM systems** (e.g., Splunk) for threat monitoring.  
+- Conduct **cyber hygiene training** for employees.  
 
-**В случае атаки:**  
-1. Немедленно отключите устройство от сети.  
-2. Сообщите в ИБ-отдел или CERT (Computer Emergency Response Team).  
+**If Attacked:**  
+1. Immediately disconnect the device from the network.  
+2. Report to the IT security team or CERT (Computer Emergency Response Team).  
 
----
+---  
 
-#### Слайд 6: Заключение  
-**Ключевые выводы:**  
-1. Киберпреступники постоянно развивают методы атак — от троянов до AI-фишинга.  
-2. Современные технологии (MFA, биометрия, Zero Trust) значительно снижают риски.  
+#### Slide 6: Conclusion  
+**Key Takeaways:**  
+1. Cybercriminals continuously evolve their methods—from trojans to AI-driven phishing.  
+2. Modern technologies (MFA, biometrics, Zero Trust) significantly reduce risks.  
 
-**Призыв к действию:**  
-- Регулярно обновляйте ПО.  
-- Участвуйте в вебинарах по кибербезопасности (например, от Kaspersky или Cisco).  
+**Call to Action:**  
+- Update software regularly.  
+- Attend cybersecurity webinars (e.g., by Kaspersky or Cisco).  
 
-**Спасибо за внимание! Готовы ответить на вопросы.**  
+**Thank you for your attention! Questions are welcome.**  
 
---- 
+---  
 
-### Дополнения для устного выступления:  
-- **Реальные кейсы:** Расскажите о громких инцидентах (например, утечка данных Facebook в 2021 году).  
-- **Интерактив:** Проведите мини-викторину на распознавание фишинговых писем.  
-- **Визуализация:** Покажите схему работы DDoS-атаки или процесс шифрования AES.
+### Additional Speaking Notes:  
+- **Real-World Cases:** Discuss high-profile incidents (e.g., Facebook’s 2021 data leak).  
+- **Interactive Element:** Host a mini-quiz on spotting phishing emails.  
+- **Visuals:** Show a DDoS attack diagram or AES encryption process.
