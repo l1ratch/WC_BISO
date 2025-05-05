@@ -17,7 +17,7 @@
 | **b) Artificial neural network** | Искусственная нейронная сеть | A computing system inspired by biological neurons, used for pattern recognition and decision-making. |  
 | **c) Augmented reality** | Дополненная реальность | Technology that overlays digital elements (e.g., images, data) onto the real world. |  
 | **d) Backpropagation** | Обратное распространение | An algorithm for training neural networks by adjusting weights based on error rates. |  
-| **e) interfaces** | Биометрия | Authentication methods using unique biological traits (e.g., fingerprints, facial recognition). |  
+| **e) Biometrics** | Биометрия | Authentication methods using unique biological traits (e.g., fingerprints, facial recognition). |  
 | **f) Internet of Things** | Интернет вещей | A network of interconnected physical devices that exchange data via the internet. |  
 | **g) Machine learning** | Машинное обучение | A subset of AI where systems learn from data without explicit programming. |  
 | **h) Raw data** | Необработанные данные | Unprocessed, unstructured data collected from sources. |  
@@ -89,7 +89,7 @@ a) **the moisture level in the soil**
 b) **controlled remotely**  
 c) **interrelated devices / transfer and process**  
 d) **smart devices / collaborate**  
-e) **connections**  
+e) **interfaces**  
 f) **measure / humidity**  
 g) **the moisture level**  
 h) **reduces data traffic**  
