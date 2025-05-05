@@ -147,7 +147,3 @@ l) corrupted
 4. **Neural networks**  
 5. **Augmented reality**  
 6. **Backpropagation**  
-
----  
-
-**Note:** For Tasks 3 and 7, watch the linked videos for precise answers. Let me know if you need further details!
