@@ -26,30 +26,17 @@ Phishing is a method of deceiving users to steal login credentials, passwords, o
 - **Smishing** — fraudulent SMS with malicious links.  
 - **Vishing** — phone calls from fake "tech support."  
 
-**Example:** In 2020, hackers compromised Twitter by phishing employees.  
-
 ### **1.3. DoS/DDoS Attacks**  
 **DoS (Denial of Service)** — an attack aimed at overwhelming a server with requests.  
 **DDoS (Distributed DoS)** — an attack launched from multiple devices (botnet).  
 
 **Consequences:** Website and online service outages, financial losses.  
 
-**Example:** In 2016, the Mirai botnet attacked DNS provider Dyn, disrupting Twitter, Netflix, and PayPal.  
-
 ### **1.4. Software Vulnerabilities and Zero-Day Exploits**  
 **Zero-day** — attacks exploiting unknown vulnerabilities before patches are released.  
 
-**Example:** The Log4j vulnerability (2021) allowed hackers to execute remote code on servers.  
-
-### **1.5. IoT Attacks**  
-Smart devices (cameras, routers) often have weak security.  
-
-**Risks:** Botnet recruitment, espionage.  
-
-### **1.6. Data Breaches**  
+### **1.5. Data Breaches**  
 Theft of corporate databases (logins, passwords, payment details).  
-
-**Example:** The 2021 Facebook data leak exposed 533 million user records.  
 
 ---  
 
@@ -69,10 +56,6 @@ Theft of corporate databases (logins, passwords, payment details).
 ### **2.3. DDoS Protection**  
 - Using CDN (Cloudflare).  
 - Traffic filtering.  
-
-### **2.4. IoT Security**  
-- Changing default passwords.  
-- Disabling unnecessary features.  
 
 ---  
 
