@@ -40,8 +40,6 @@
 
 ## 🔠 Abbreviations and Explanations
 
-#### **English Version**
-
 | Abbreviation | Explanations |
 |--------------|-----------|
 | **AI** | Artificial Intelligence |
