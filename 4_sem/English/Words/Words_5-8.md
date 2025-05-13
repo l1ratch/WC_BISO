@@ -98,8 +98,8 @@ A program or device that performs cryptocurrency mining using computational reso
 A fraudulent attack where a hacker impersonates a trusted entity to steal sensitive data (e.g., passwords).  
 
 #### **Piggybacking**  
-1) Unauthorized use of someone else's internet connection.  
-2) In cybersecurity, covert data transmission within a legitimate connection.  
+Unauthorized use of someone else's internet connection.  
+In cybersecurity, covert data transmission within a legitimate connection.  
 
 #### **Salami shaving**  
 A fraud method where small amounts are deducted from multiple accounts, often going unnoticed.  
@@ -160,8 +160,8 @@ Malicious software disguised as legitimate software to gain unauthorized system 
 Мошенническая атака, при которой злоумышленник выдает себя за доверенное лицо, чтобы похитить конфиденциальные данные (например, пароли).  
 
 #### **Piggybacking**  
-1) Несанкционированное использование чужого интернет-соединения.  
-2) В кибербезопасности — скрытая передача данных внутри легального соединения.  
+Несанкционированное использование чужого интернет-соединения.  
+В кибербезопасности — скрытая передача данных внутри легального соединения.  
 
 #### **Salami shaving**  
 Метод мошенничества, при котором с множества счетов понемногу списываются небольшие суммы, остающиеся незамеченными.  
