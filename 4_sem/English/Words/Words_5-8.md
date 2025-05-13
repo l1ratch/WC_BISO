@@ -40,7 +40,7 @@
 
 ## 🔠 Acronyms & Abbreviations
 
-| Abbreviation | Explanations |
+| Abbreviation | Stands For |
 |--------------|-----------|
 | **AI** | Artificial Intelligence |
 | **AR** | Augmented Reality |
