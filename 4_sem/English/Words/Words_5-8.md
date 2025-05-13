@@ -172,7 +172,4 @@ Malicious software disguised as legitimate software to gain unauthorized system 
 Условие или событие, активирующее выполнение вредоносного кода (например, определенная дата или действие пользователя).  
 
 #### **Trojan**  
-Вредоносная программа, маскирующаяся под легальное ПО для несанкционированного доступа к системе.  
-
----  
-This format provides clear separation between English and Russian definitions while maintaining readability. The terms are bolded for easy scanning, and each definition is concise yet informative. Perfect for documentation or study materials!
+Вредоносная программа, маскирующаяся под легальное ПО для несанкционированного доступа к системе.
