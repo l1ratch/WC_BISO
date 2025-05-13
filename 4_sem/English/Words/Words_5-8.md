@@ -38,7 +38,7 @@
 | virtual reality                   | виртуальная реальность                     |
 | worm                              | червь                                      |
 
-## 🔠 Abbreviations and Explanations
+## 🔠 Acronyms & Abbreviations
 
 | Abbreviation | Explanations |
 |--------------|-----------|
