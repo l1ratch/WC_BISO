@@ -62,9 +62,7 @@
 | **MFA** | Многофакторная аутентификация |
 | **VR** | Виртуальная реальность |
 
-### **Определения терминов (Definitions)**  
-
-### **Definitions of Terms**
+## 🧾 Definitions
 
 #### **Brute force**  
 A hacking method that involves trying all possible character combinations (e.g., passwords) until the correct one is found.  
