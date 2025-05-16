@@ -149,7 +149,7 @@ Malicious software disguised as legitimate software to gain unauthorized system 
 #### **Output units (Выходные нейроны)**  
 Нейроны в нейронной сети, возвращающие конечный результат вычислений.  
 
-#### **IoT (Internet of Things) (Интернет вещей, IoT)**  
+#### **IoT (Internet of Things) (Интернет вещей)**  
 Сеть физических устройств (например, умных гаджетов), подключенных к интернету и обменивающихся данными.  
 
 #### **Keylogger (Кейлоггер)**  
