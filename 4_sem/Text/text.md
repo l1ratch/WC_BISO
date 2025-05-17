@@ -1,4 +1,4 @@
-1. INTRODUCTION
+1. INTRODUCTION<br>
 In the network, The most basic, important and oldest service is DNS[1] (domain name system) . The
 domain name system is an effective system on the Internet that solves the naming of online machines.
 Just like visiting friends, you need to know how others go first. When a host wants to access another
@@ -46,7 +46,7 @@ You can access any data and upload and download files, and get a shell. For exam
 network that requires authentication, you find that all IPs and ports are inaccessible, but DNS port 53
 can be used, which provides a convenient condition for DNS tunnel attacks.
 
-2. RESEARCH METHOD
+2. RESEARCH METHOD<br>
 In order to deal with the increasingly severe and diversified DNS attack methods, we must maintain the
 leading technology. And the first step is to correctly identify and discover these attacks. There two
 ways in data recognition, playload analysis and traffic analysis.
