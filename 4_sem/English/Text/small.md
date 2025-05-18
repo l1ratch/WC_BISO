@@ -1,17 +1,11 @@
 # EN
-DNS is a mission-critical system that converts domain names into IP addresses, but is vulnerable to various attacks such as DDoS, cache poisoning, and tunneling.
-
-DNS attacks include methods that exploit protocol vulnerabilities (for example, UDP port 53), including packet spoofing attacks, traffic amplification, and hidden data channels.
-
-To detect attacks, an analysis of changes in DNS traffic and query distribution is proposed, which makes it possible to identify anomalies, even if attackers disguise their activity as legitimate traffic.
-
-The research focuses on monitoring network nodes and applying big data methods to identify malicious domains and attacking IP addresses.
+1. DNS translates domain names into IP addresses, but hackers can attack it in different ways, like overloading servers or stealing data.  
+2. Attacks include fake DNS requests, traffic amplification, and secretly sending data through DNS.  
+3. To detect attacks, we can monitor sudden spikes in DNS traffic or suspicious domains with too many requests.  
+4. Researchers suggest analyzing network data to quickly identify and block these threats.
 
 # RU
-DNS — это критически важная система, преобразующая доменные имена в IP-адреса, но уязвимая к различным атакам, таким как DDoS, кэш-отравление и туннелирование.
-
-Атаки на DNS включают методы, использующие уязвимости протокола (например, UDP-порт 53), включая атаки подменой пакетов, амплификацию трафика и скрытые каналы передачи данных.
-
-Для обнаружения атак предлагается анализ изменений DNS-трафика и распределения запросов, что позволяет выявлять аномалии, даже если злоумышленники маскируют активность под легитимный трафик.
-
-Исследование фокусируется на мониторинге сетевых узлов и применении методов big data для выявления вредоносных доменов и атакующих IP-адресов.
+1. DNS переводит домены в IP-адреса, но хакеры могут его атаковать разными способами, например, перегружая сервер или воруя данные.  
+2. Атаки бывают разные: подделка DNS-запросов, усиление трафика, скрытая передача информации через DNS.  
+3. Чтобы находить атаки, можно следить за резкими скачками DNS-трафика или подозрительными доменами, на которые идёт много запросов.  
+4. Исследователи предлагают анализировать сетевые данные, чтобы быстро выявлять и блокировать такие угрозы.
