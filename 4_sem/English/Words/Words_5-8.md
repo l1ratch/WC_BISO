@@ -45,7 +45,7 @@
 | **AI** | Artificial Intelligence |
 | **AR** | Augmented Reality |
 | **DDoS** | Distributed Denial of Service |
-| **CAPTCHA** | Completely Automated Public Turing test to tell Computers and Humans Apart |
+| **CAPTCHA** | Completely Automated Public **Turing test** to tell Computers and Humans Apart |
 | **IoT** | Internet of Things |
 | **MFA** | Multi-Factor Authentication |
 | **VR** | Virtual Reality |
