@@ -10,6 +10,8 @@
 # Для Ubuntu/Debian
 sudo apt update && sudo apt install -y docker.io
 sudo systemctl enable --now docker
+sudo usermod -aG docker $USER  # Добавляем текущего пользователя в группу docker
+newgrp docker                  # Применяем изменения без перезагрузки
 
 # Проверка
 docker --version
