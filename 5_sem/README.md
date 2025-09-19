@@ -1,4 +1,4 @@
-
+# Разделы:
 [БДиЭС](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БДиЭС)<br>
 [БЖД](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БЖД)<br>
 [БСА](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БСА)<br>
