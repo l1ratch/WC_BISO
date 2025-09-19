@@ -6,7 +6,6 @@
 - [МиОИАД](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/МиОИАД)<br>
 - [Философия](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/Философия)<br>
 - [МиОИАД](https://github.com/l1ratch/WC_BISO/tree/main/4_sem/МиОИАД)<br>
-<hr>
 
 ## [5 сем](https://github.com/l1ratch/WC_BISO/tree/main/5_sem)<br>
 - [БДиЭС](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БДиЭС)<br>
