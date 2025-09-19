@@ -1,5 +1,5 @@
-# [Назад](https://github.com/l1ratch/WC_BISO/tree/main/)
-# Разделы:
+## [Назад](https://github.com/l1ratch/WC_BISO/tree/main)
+## Разделы:
 [БДиЭС](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БДиЭС)
 [БЖД](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БЖД)
 [БСА](https://github.com/l1ratch/WC_BISO/tree/main/5_sem/БСА)
