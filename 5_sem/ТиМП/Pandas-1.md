@@ -109,3 +109,5 @@
 *   `//` → `df.floordiv()`
 *   `%` → `df.mod()`
 *   `**` → `df.pow()`
+
+# OFF WIKI: https://pandas.pydata.org/docs/user_guide/index.html
