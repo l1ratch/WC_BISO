@@ -5,5 +5,5 @@
 ## Быстрый запуск
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/USERNAME/docker-installer/main/install-docker.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/l1ratch/WC_BISO/main/docker-installer/install-docker.sh | sudo bash
 ```
