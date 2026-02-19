@@ -153,11 +153,17 @@ echo ""
 
 echo "[5/7] Создание пользователя"
 
-if [ -t 0 ]; then
-    read -p "Введите имя пользователя (Enter чтобы пропустить): " USERNAME
+if [ -e /dev/tty ]; then
+
+    echo -n "Введите имя пользователя (Enter чтобы пропустить): "
+    read USERNAME <&3 || USERNAME=""
+
 else
-    read -p "Введите имя пользователя (Enter чтобы пропустить): " USERNAME < /dev/tty
+
+    USERNAME=""
+
 fi
+
 
 if [ -n "$USERNAME" ]; then
 
@@ -169,12 +175,14 @@ if [ -n "$USERNAME" ]; then
 
         useradd -m -s /bin/bash "$USERNAME"
 
-        passwd "$USERNAME" < /dev/tty
+        echo "Введите пароль для $USERNAME:"
+        passwd "$USERNAME"
 
         usermod -aG sudo "$USERNAME"
         usermod -aG docker "$USERNAME"
 
         echo "✔ Пользователь создан"
+        echo "✔ Добавлен в sudo и docker"
 
     fi
 
