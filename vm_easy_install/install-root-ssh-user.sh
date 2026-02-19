@@ -153,21 +153,16 @@ echo ""
 
 echo "[5/7] Создание пользователя"
 
+USERNAME=""
+
 if [ -e /dev/tty ]; then
-
     echo -n "Введите имя пользователя (Enter чтобы пропустить): "
-    read USERNAME <&3 || USERNAME=""
-
-else
-
-    USERNAME=""
-
+    read USERNAME < /dev/tty
 fi
-
 
 if [ -n "$USERNAME" ]; then
 
-    if id "$USERNAME" &>/dev/null; then
+    if id "$USERNAME" >/dev/null 2>&1; then
 
         echo "✔ Пользователь уже существует"
 
