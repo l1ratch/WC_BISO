@@ -152,7 +152,11 @@ echo ""
 
 echo "[5/7] Создание пользователя"
 
-read -p "Введите имя пользователя (Enter чтобы пропустить): " USERNAME
+if [ -t 0 ]; then
+    read -p "Введите имя пользователя (Enter чтобы пропустить): " USERNAME
+else
+    read -p "Введите имя пользователя (Enter чтобы пропустить): " USERNAME < /dev/tty
+fi
 
 if [ -n "$USERNAME" ]; then
 
@@ -164,16 +168,12 @@ if [ -n "$USERNAME" ]; then
 
         useradd -m -s /bin/bash "$USERNAME"
 
-        echo ""
-        echo "Введите пароль для $USERNAME:"
-        passwd "$USERNAME"
+        passwd "$USERNAME" < /dev/tty
 
         usermod -aG sudo "$USERNAME"
         usermod -aG docker "$USERNAME"
 
         echo "✔ Пользователь создан"
-        echo "✔ Добавлен в sudo"
-        echo "✔ Добавлен в docker"
 
     fi
 
@@ -182,8 +182,6 @@ else
     echo "Пропущено"
 
 fi
-
-echo ""
 
 ########################################
 # Docker test
