@@ -2,57 +2,142 @@
 
 set -e
 
+clear
+
 echo "========================================="
-echo " Root SSH + User Setup Script"
-echo " Ubuntu 22.04"
+echo "   VM Easy Install Script"
+echo "   Root SSH + User + Docker Setup"
 echo "========================================="
 echo ""
 
+########################################
 # Проверка root
+########################################
+
 if [ "$EUID" -ne 0 ]; then
-  echo "Запусти как root или через sudo"
+  echo "Ошибка: запусти через sudo"
   exit 1
 fi
 
-echo "[1/6] Установка пароля root..."
+########################################
+# Получение IP
+########################################
+
+IP=$(hostname -I | awk '{print $1}')
+
+########################################
+# Root password
+########################################
+
+echo "[1/7] Установка пароля root..."
 
 echo "root:root" | chpasswd
 
-echo "✔ Пароль root установлен: root"
+echo "✔ Пароль root установлен"
 echo ""
 
-echo "[2/6] Настройка SSH..."
+########################################
+# SSH Setup
+########################################
+
+echo "[2/7] Настройка SSH..."
 
 SSH_CONFIG="/etc/ssh/sshd_config"
 
-# Backup
-cp $SSH_CONFIG ${SSH_CONFIG}.backup.$(date +%s)
+# Backup один раз
+if [ ! -f "${SSH_CONFIG}.backup" ]; then
+    cp $SSH_CONFIG ${SSH_CONFIG}.backup
+fi
 
-# Разрешаем root login
-sed -i 's/^#\?PermitRootLogin .*/PermitRootLogin yes/g' $SSH_CONFIG
+# Удаляем старые ListenAddress
+sed -i '/^ListenAddress/d' $SSH_CONFIG
 
-# Разрешаем пароль
-sed -i 's/^#\?PasswordAuthentication .*/PasswordAuthentication yes/g' $SSH_CONFIG
+# Добавляем listen на все интерфейсы
+echo "ListenAddress 0.0.0.0" >> $SSH_CONFIG
 
-# Отключаем ключи (не обязательно, но для "простого доступа")
-sed -i 's/^#\?PubkeyAuthentication .*/PubkeyAuthentication no/g' $SSH_CONFIG
+# Функция установки параметра
+set_ssh_option() {
+    OPTION=$1
+    VALUE=$2
 
-# Убираем ограничения
-sed -i 's/^#\?ChallengeResponseAuthentication .*/ChallengeResponseAuthentication no/g' $SSH_CONFIG
+    if grep -q "^$OPTION" $SSH_CONFIG; then
+        sed -i "s/^$OPTION.*/$OPTION $VALUE/" $SSH_CONFIG
+    else
+        echo "$OPTION $VALUE" >> $SSH_CONFIG
+    fi
+}
 
-echo "✔ SSH настроен"
+set_ssh_option "PermitRootLogin" "yes"
+set_ssh_option "PasswordAuthentication" "yes"
+set_ssh_option "PubkeyAuthentication" "no"
+set_ssh_option "ChallengeResponseAuthentication" "no"
+set_ssh_option "UsePAM" "yes"
+set_ssh_option "UseDNS" "no"
+
+systemctl restart ssh
+
+echo "✔ SSH настроен (0.0.0.0, root login enabled)"
+echo ""
+
+########################################
+# Docker install
+########################################
+
+echo "[3/7] Установка Docker..."
+
+if command -v docker &> /dev/null; then
+
+    echo "✔ Docker уже установлен"
+
+else
+
+    apt update
+
+    apt install -y \
+        ca-certificates \
+        curl \
+        gnupg \
+        lsb-release
+
+    install -m 0755 -d /etc/apt/keyrings
+
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+        | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+    chmod a+r /etc/apt/keyrings/docker.gpg
+
+    echo \
+      "deb [arch=$(dpkg --print-architecture) \
+      signed-by=/etc/apt/keyrings/docker.gpg] \
+      https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) stable" \
+      > /etc/apt/sources.list.d/docker.list
+
+    apt update
+
+    apt install -y \
+        docker-ce \
+        docker-ce-cli \
+        containerd.io \
+        docker-buildx-plugin \
+        docker-compose-plugin
+
+    systemctl enable docker
+    systemctl start docker
+
+    echo "✔ Docker установлен"
+
+fi
 
 echo ""
-echo "[3/6] Перезапуск SSH..."
 
-systemctl restart ssh || systemctl restart sshd
+########################################
+# Docker group
+########################################
 
-echo "✔ SSH перезапущен"
+echo "[4/7] Проверка группы docker..."
 
-echo ""
-echo "[4/6] Проверка группы docker..."
-
-if ! getent group docker > /dev/null 2>&1; then
+if ! getent group docker > /dev/null; then
     groupadd docker
     echo "✔ Группа docker создана"
 else
@@ -60,19 +145,27 @@ else
 fi
 
 echo ""
-echo "[5/6] Создание пользователя"
 
-read -p "Введите имя нового пользователя (или Enter чтобы пропустить): " USERNAME
+########################################
+# Create user
+########################################
 
-if [ ! -z "$USERNAME" ]; then
+echo "[5/7] Создание пользователя"
+
+read -p "Введите имя пользователя (Enter чтобы пропустить): " USERNAME
+
+if [ -n "$USERNAME" ]; then
 
     if id "$USERNAME" &>/dev/null; then
-        echo "Пользователь уже существует"
+
+        echo "✔ Пользователь уже существует"
+
     else
+
         useradd -m -s /bin/bash "$USERNAME"
 
         echo ""
-        echo "Введите пароль для пользователя $USERNAME:"
+        echo "Введите пароль для $USERNAME:"
         passwd "$USERNAME"
 
         usermod -aG sudo "$USERNAME"
@@ -81,27 +174,55 @@ if [ ! -z "$USERNAME" ]; then
         echo "✔ Пользователь создан"
         echo "✔ Добавлен в sudo"
         echo "✔ Добавлен в docker"
+
     fi
 
 else
+
     echo "Пропущено"
+
 fi
 
 echo ""
-echo "[6/6] Готово"
+
+########################################
+# Docker test
+########################################
+
+echo "[6/7] Проверка Docker..."
+
+docker --version
+
+echo "✔ Docker работает"
+
 echo ""
 
-IP=$(hostname -I | awk '{print $1}')
+########################################
+# Done
+########################################
+
+echo "[7/7] Готово"
+echo ""
 
 echo "========================================="
-echo " Подключение:"
+echo " SSH доступ:"
 echo ""
-echo "ssh root@$IP"
-echo "пароль: root"
+echo " root:"
+echo " ssh root@$IP"
+echo " password: root"
 echo ""
-if [ ! -z "$USERNAME" ]; then
-echo "или"
-echo "ssh $USERNAME@$IP"
+
+if [ -n "$USERNAME" ]; then
+echo " user:"
+echo " ssh $USERNAME@$IP"
 fi
-echo "========================================="
+
 echo ""
+echo " SSH слушает:"
+echo " 0.0.0.0:22"
+echo ""
+echo " Docker команды:"
+echo " docker ps"
+echo " docker compose version"
+echo ""
+echo "========================================="
