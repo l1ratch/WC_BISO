@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+exec < /dev/tty
 
 set -e
 
